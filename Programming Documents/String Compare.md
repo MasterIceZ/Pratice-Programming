@@ -1,0 +1,8 @@
+String compare use to compare two strings
+syntax :
+a = strcmp(String1,String2);
+
+output of stringcmp 
+/ a < 0 ->Ascii of String1 < String2 \
+> a = 0 ->String1 is same as String2 <
+\ a > 0 ->Ascii of String1 > String2 /
