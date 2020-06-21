@@ -4,3 +4,5 @@ all : code.cpp
 clean :
   rm code
   clear
+run :
+  ./code
