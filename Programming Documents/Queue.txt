@@ -1,0 +1,11 @@
+Syntax :
+queue <datatype> name;
+pointer 1 place :
+1 : front
+
+function :
+q.front()
+q.push(data)
+q.pop() //pop front
+q.size()
+q.empty //bool True/False
