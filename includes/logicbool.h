@@ -2,6 +2,8 @@
  * Logic Operations
  * IceBorworntat
  * */
+#include <cstdio>
+
 bool andl (bool a,bool b)
 {
 	if(a==true && b==true)
