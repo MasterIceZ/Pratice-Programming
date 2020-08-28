@@ -5,8 +5,6 @@
 
 using namespace std;
 
-
-
 //min element
 template <class T> T mnelement(vector<T> v);
 template <class T> T mnelement(vector<T> v)
@@ -15,6 +13,7 @@ template <class T> T mnelement(vector<T> v)
 	return v[0];
 }
 
+//max element
 template <class T> T mxelement(vector<T> v);
 template <class T> T mxelement(vector<T> v)
 {
