@@ -1,17 +1,12 @@
 #include <vector>
-#include <iostream>
-
-using namespace std;
-
 
 namespace ice
 {
-
     //min element
     template <class T>
-    T mnelement(vector<T> v);
+    T mnelement(std::vector<T> v);
     template <class T>
-    T mnelement(vector<T> v)
+    T mnelement(std::vector<T> v)
     {
         for(int i=1;i<v.size();++i)
         {
@@ -25,9 +20,9 @@ namespace ice
 
     //max element
     template <class T>
-    T mxelement(vector<T> v);
+    T mxelement(std::vector<T> v);
     template <class T>
-    T mxelement(vector<T> v)
+    T mxelement(std::vector<T> v)
     {
         for(int i=1;i<v.size();++i)
         {
@@ -41,9 +36,9 @@ namespace ice
 
     //find element
     template <class T>
-    int findelement(vector<T> v, T want);
+    int findelement(std::vector<T> v, T want);
     template <class T>
-    int findelement(vector<T> v, T want)
+    int findelement(std::vector<T> v, T want)
     {
         bool found = false;
         int idx;
