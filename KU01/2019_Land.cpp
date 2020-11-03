@@ -30,6 +30,7 @@ void solution(){
 			island++;
 		}
 	}	
+	dp.push_back(sum);
 	int ans = 0;
 	sort(dp.begin(),dp.end());
 	//__test(dp);
