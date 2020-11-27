@@ -19,23 +19,31 @@ void Insert_Graph(){
 }
 
 bool visited[10010];
+int parent[10010];
 int layer[10010];
 
 void BFS(int a){
     memset(visited,false,sizeof visited);
+    memset(parent,-1,sizeof parent);
     memset(layer,-1,sizeof layer);
-    layer[a] = 0;
     queue<int>q;
     q.push(a);
+    layer[a] = 0;
     while(!q.empty()){
         int now = q.front();
         q.pop();
+        if(visited[now]){
+            continue;
+        }
         visited[now] = true;
-        cout << "Now Visiting : " << now << endl;
+        cout << "Now Visiting : " << now << " ,Parent : " << parent[now] << endl;
         for(int i=0;i<deg[now];++i){
             int v = adj[now][i];
-            if(layer[v]==-1){
-                layer[v] = layer[now]+1;
+            if(!visited[v]){
+                if(layer[v] == -1){
+                    layer[v] = layer[now]+1;
+                }
+                parent[v] = now;
                 q.push(v);
             }
         }
