@@ -1,140 +1,70 @@
-/*
- * _IceBorworntat926
- * https://github.com/MasterIceZ 
- */
+
+// Tempalte By _IceBorworntat926 
+// Start Line 68
+
 #include <bits/stdc++.h>
 using namespace std;
+
+#define int long long
+#define INF 2e18
+#define all(x) x.begin(),x.end()
+#define _DBG() cout << "EiEi" << endl
+#define dec(a,b) fixed<<setprecision(b)<<a
 #define endl '\n'
 #define space " "
-#define int long long
-#define double long double
-#define sim template<typename T
-#define fi first
-#define se second
+#define rep(i,a,b) for(i=a;i<b;++i)
+#define per(i,a,b) for(i=a;i>0;--i)
+#define FOR(i,a,b) for(i=a;i<=b;++i)
+#define ROF(i,a,b) for(i=a;i>=0;--i)
 
-#define pii pair<int,int>
-#define pb push_back
-#define sz(x) (int)(x).size()
-#define all(x) (x).begin(),(x).end()
-#define ub upper_bound
-#define lb lower_bound
-#define dec(_) cout << fixed << setprecision(_)
-#define EACH(a) for(auto x : (a))
+typedef pair<int,int> pii;
+typedef vector<int> vi;
+typedef priority_queue pq;
+typedef struct st;
 
-time_t time_now = clock();
-sim>void __test(T a){
-	cerr << "DEBUG : ";
-	cerr << a << endl;
+template <class A> void read(vector<A>& v);
+template <class A,size_t S> void read(array <A, S>& a);
+template <class T> void read(T& x)
+{
+	cin >> x;
 }
-sim>void __test(vector<T>v){
-	cerr << "DEBUG : ";
-	for(auto x : v){
-		cerr << x << " " ;
+void read(double& d)
+{
+	string t;
+	read(t);
+	d = stod(t);
+}
+void read(long double& d)
+{
+	string t;
+	read(t);
+	d = stold(t);
+}
+template <class H,class... T> void read(H& h,T&... t)
+{
+	read(h);
+	read(t...);
+}
+template <class A> void read(vector <A>& x)
+{
+	for(auto& a : x)
+	{
+		read(a);
 	}
-	cerr << endl;
 }
-sim>void read(T& a){
-	cin >> a;
-}
-sim>void read(vector<T>& a){
-	for(auto &x : a){
+template <class A,size_t S> void read(array<A, S>& x)
+{
+	for(auto& a : x)
+	{
 		read(x);
 	}
 }
-sim ,class... H>void read(T& t,H&... h){
-	read(t);
-	read(h...);
-}	
-sim>vector<T> dp_qs(vector<T>dp,size_t nax){
-	for(int i=1;i<=nax;++i){
-		dp[i] += dp[i-1];
-	}
-	return dp;
-}
-int gcd(int a,int b){
-	if(a==0){
-		return b;
-	} 
-	if(b==0){
-		return a;
-	} 
-	if(a%b==0){
-		return b;
-	}
-	return gcd(b,a%b);
-}
-int lcm(int a,int b){
-	return a*b/gcd(a,b);
-}
-string reverse(string s){
-	int n = s.size(),cnt=0; 
-	string rev = s; 
-	for(int i=n-1;i>=0;--i){
-		rev[cnt++] = s[i];
-	}
-   	return rev;
-}
-void writeCase(int _){
-	cout << "Case #" <<  _ << ": \n"; 
-}
-bool isPrime(int n){
-	if(n<=1){
-		return false;
-	}
-	if(n<=3){
-		return true;
-	}
-	if(n%2==0 or n%3==0){
-		return false;
-	}
-	for(int i=5;i<sqrt(n);i+=6){
-		if(n%i==0 or n%(i+2)==0){
-			return false;
-		}
-	}
-	return true;
-}
-sim>void DBG(){
-	cerr << "]" << endl;
-}
-sim ,class... H>void DBG(T t,H... h){
-	cerr << t;
-	if(sizeof...(h)){
-		cerr << ", ";
-	}
-	DBG(h...);
-}	
-#ifdef _DeBug
-#define dbg(...) cerr << "Line(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
-#else
-#define dbg(...) 0
-#endif
 
-typedef long long ll;
-bool __Q=0;
-bool __writecase=0;
-int n,m;
-const int INF = 2e18;
-
-void solution(){
-	
-	return ;
-}
-
-int32_t main (){
+int32_t main()
+{
 	ios_base::sync_with_stdio(0);
-	cin.tie(0);
-	int T=1;
-	int _____=0;
-	if(__Q){
-		cin >> T;
-	}
-	do{
-		if(__writecase){
-			writeCase(_____++);
-		}
-		solution();	
-		cout << '\n';
-	}while(--T);
+	cin.tie(0);cout.tie(0);
+	//Code Here :
+	
 	return 0;
 }
